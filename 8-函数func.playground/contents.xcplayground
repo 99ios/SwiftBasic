@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='函数基础'/>
+        <page name='函数对象'/>
+        <page name='函数嵌套'/>
+        <page name='关键字'/>
+    </pages>
+</playground>
