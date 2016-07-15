@@ -38,8 +38,16 @@ let returnFunc = operation("add")
 result = returnFunc(a:3,b:4)
 
 //: 函数作为参数
-func compare(a:Int, b:Int) -> Int {
+func largeNumber(a:Int, b:Int) -> Int {
     if a > b {
+        return a
+    }
+    
+    return b
+}
+
+func smallNumber(a:Int, b:Int) -> Int {
+    if a < b {
         return a
     }
     
@@ -52,7 +60,7 @@ func comparePlus(funcParam:(Int, Int) ->Int,a:Int, b:Int) -> Int {
 
 }
 
-let compareParam = compare
-comparePlus(compareParam, a: 3, b: 4)
+comparePlus(largeNumber, a: 3, b: 4)
+comparePlus(smallNumber, a: 3, b: 4)
 
 //: [>> 函数嵌套](@next)

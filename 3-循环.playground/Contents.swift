@@ -1,7 +1,13 @@
 //: # 循环
 
 //: 普通for循环
+//传统写法
 for var i = 0; i < 10; i++ {
+    print("the current i Value: \(i)")
+}
+
+//swift3.0推荐写法
+for i in 0 ..< 10 {
     print("the current i Value: \(i)")
 }
 
@@ -21,5 +27,6 @@ for var string in names {
 //: while循环
 var j = 0
 while j < 5 {
-    print(j++)
+    j += 1
+    print(j)
 }

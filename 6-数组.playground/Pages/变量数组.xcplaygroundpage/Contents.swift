@@ -25,6 +25,9 @@ array2
 array2.removeAtIndex(0)
 array2
 
+//修改数组中元素的值
+array2[0] = "kobe"
+array2
 
 //合并数组
 var array3 = ["hello","swift"]

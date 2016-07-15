@@ -17,7 +17,7 @@ class Person {
     }
     
     func eat(food:String) {
-        print("\(name) eat \(food)")
+        print("\(self.name) eat \(food)")
     }
     
 }

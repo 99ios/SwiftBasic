@@ -18,7 +18,7 @@ class PersonalRenter:RentProtocol {
     var personName:String?
     
     //协议中定义的属性
-    var pricePerMonth:Double = 500.0
+    let pricePerMonth:Double = 500.0
     var duration:Int = 3
     var discount:Double = 1.0
     
@@ -36,7 +36,7 @@ class BusinessRenter:RentProtocol {
     var companyName:String?
     
     //协议中定义的属性
-    var pricePerMonth:Double = 400.0
+    let pricePerMonth:Double = 400.0
     var duration:Int = 12
     var discount:Double = 0.9
     

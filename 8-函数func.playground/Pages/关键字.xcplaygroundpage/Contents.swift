@@ -8,10 +8,26 @@ func function1(myName:String, myAge:Int) {
 
 function1("jack", myAge: 34)
 
-//: var
+
+//: inout：当函数体内修改参数的值，需要反馈到函数外时，需要把参数添加inout关键字
+var dynamicName:String = "jack"
+
+func function4(inout name:String) {
+    name = "rose"
+    print(name)
+}
+
+dynamicName
+//调用时，参数前会自动添加&符号
+function4(&dynamicName)
+dynamicName
+
+
+
+//: var（Swift3.0版本已经废弃，不再使用）
 /*传参都是常量，不能改变其值
 func function2(myName:String, myAge:Int) {
-    print("my name is \(myName), my age is \(++myAge)")
+print("my name is \(myName), my age is \(++myAge)")
 }
 */
 
@@ -34,19 +50,3 @@ func function3(var myName:String,var myAge:Int) {
 function3(myName, myAge: myAge)
 myName
 myAge
-
-//: inout：当函数体内修改变量的值，需要反馈到函数外时，需要把参数添加inout关键字
-var dynamicName:String = "jack"
-
-func function4(inout name:String) {
-    name = "rose"
-    print(name)
-}
-
-dynamicName
-//调用时，参数前会自动添加&符号
-function4(&dynamicName)
-dynamicName
-
-
-
